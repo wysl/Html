@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>表单&表单元素</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <!--
+        <form:表单标签 name="唯一标识" method="get|post(表单提交方式)" action="提交的地址" encype="multipart/form-data(支持文件上传)">
+            ......
+        </form>
+        -->
+        <!-- method值的区别：
+                            get:在URL中显示提交的表单的信息；
+                            post:不显示URL提交的表单信息
+        -->
+        
+        <form name="form1" method="post">
+            
+            <!--
+            <input:表单元素为input(输入标签) type="text(文本类型)" name="唯一标识" size="输入栏的长度" value="选项的值" maxlength="最大输入的长度">
+            -->
+            用户名：<input type="text" name="username" size="18" value="请输入您的账号" maxlength="20" />
+            <br/><br/>
+            
+            <!--
+            <input:表单元素为input(输入标签) type="password(密码类型)" name="唯一标识" size="输入栏的长度" value="选项的值" maxlength="最大输入的长度">
+            -->
+            密码：&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" name="userpasword" size="18" value="" maxlength="30" />
+            <br/><br/>
+            
+            <!-- 
+            <input:表单元素为input(输入标签) type="hidden(隐藏类型)" name="唯一标识" value="选项的值">
+            -->
+            隐藏域：<input type="hidden" name="sysinfo" value="..." />
+            <br/><br/>
+            
+            <!-- 
+            <input:表单元素为input(输入标签) type="file(文件选择类型)" name="唯一标识">
+            -->
+            上传文件：&nbsp;&nbsp;&nbsp;&nbsp;<input type="file" name="fileup" />
+            <br/><br/>
+            
+            <!--
+            <input:表单元素为input(输入标签) type="radio(单选类型)" name="唯一标识" value="选项的值" checked:默认选择的项>
+            -->
+            性别：&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="sex" value="man" checked />男
+                &nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="sex" value="women" />女
+            <br/><br/>
+            
+            <!--
+            <input:表单元素为input(输入标签)(输入)标签 type="checkbox(多选类型)" name="唯一标识" value="选项的值" checked:默认选择的项>
+            -->
+            爱好：&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="hobby" value="keng" />坑
+                &nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="hobby" value="meng"  checked />蒙
+                &nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="hobby" value="guai"  checked />拐
+                &nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="hobby" value="pian" />骗
+                &nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="hobby" value="tou" />偷
+            <br/><br/>
+            
+            <!--
+            <select:表单元素为下select(下拉框标签) name="唯一标识">
+                <option value="设定的值" selected:默认选择的项>显示的选项</option>
+            </select>
+            -->
+            年龄：&nbsp;&nbsp;&nbsp;&nbsp;<select name="age">
+                <option value="1">1岁</option>
+                <option value="2" selected>2岁</option>
+                <option value="3">3岁</option>
+                <option value="4">4岁</option>
+                <option value="5">5岁</option>
+            </select>
+            <br/><br/>
+            
+            <!--
+            <textarea:表单元素为textarea(文本域标签) name="唯一标识" cols="列宽" rows="行数">
+                默认显示的内容
+            </textarea>
+            -->
+            个人介绍：&nbsp;&nbsp;&nbsp;&nbsp;<textarea name="usermsg" cols="30" rows="10" />
+                请输入您的个人介绍
+            </textarea>
+            <br/><br/>
+            
+            <!-- 
+            <input:表单元素为input(输入标签) type="button(自定义按钮类型)" value="显示的内容">
+            -->
+            <input type="button" value="自定义按钮" />
+            <br/><br/>
+            
+            <!-- 
+            <input:表单元素为input(输入标签) type="submit(提交按钮类型)" value="按钮上显示的内容(默认显示为:提交)"；内容提交到<form>标签action属性指定的地址>
+            -->
+            <input type="submit" value="提交表单" />
+            
+            <!-- 
+            <input:表单元素为input(输入标签) type="reset(重置按钮类型)" value="按钮上显示的内容(默认显示为:重置)">
+            -->
+            &nbsp;&nbsp;&nbsp;&nbsp;<input type="reset"  value="重置表单">
+        </form>
+    </body>
+</html>
